@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Section</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="gallery-section">
+        <h2 class="section-title">Gallery</h2>
+        <div class="gallery-imgs">
+            <img src="assets/banner1.jpg" alt="Gallery Image 1" onclick="openOverlay(this)">
+            <img src="assets/banner2.jpg" alt="Gallery Image 2" onclick="openOverlay(this)">
+            <img src="assets/banner1.jpg" alt="Gallery Image 3" onclick="openOverlay(this)">
+            <img src="assets/banner2.jpg" alt="Gallery Image 4" onclick="openOverlay(this)">
+            <img src="assets/banner1.jpg" alt="Gallery Image 5" onclick="openOverlay(this)">
+            <img src="assets/banner2.jpg" alt="Gallery Image 6" onclick="openOverlay(this)">
+        </div>
+    </div>
+
+    <!-- Image Overlay -->
+    <div id="imageOverlay" class="overlay" onclick="closeOverlay()">
+        <span class="close-btn">&times;</span>
+        <img id="overlayImage" class="overlay-content" src="" alt="Enlarged Image">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
